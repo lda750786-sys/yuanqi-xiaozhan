@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <!-- 抓狂码农：双手抱头 + 代码屏幕 -->
+  <g stroke="#4d3b28" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 头顶炸毛线 -->
+    <path d="M95 46 L84 30" fill="none"/>
+    <path d="M120 40 L120 22" fill="none"/>
+    <path d="M145 46 L156 30" fill="none"/>
+    <!-- 身体 -->
+    <rect x="90" y="138" width="60" height="54" rx="18" fill="#ff8a3d"/>
+    <!-- 手臂 -->
+    <path d="M96 152 Q74 120 79 88" fill="none"/>
+    <path d="M144 152 Q166 120 161 88" fill="none"/>
+    <!-- 头 -->
+    <circle cx="120" cy="100" r="40" fill="#ffd9b8"/>
+    <!-- 刘海 -->
+    <path d="M80 100 A40 40 0 0 1 160 100 Q140 80 120 80 Q100 80 80 100 Z" fill="#4d3b28"/>
+    <!-- 抱头的手 -->
+    <circle cx="76" cy="76" r="13" fill="#ffd9b8"/>
+    <circle cx="164" cy="76" r="13" fill="#ffd9b8"/>
+    <!-- > < 眼 -->
+    <path d="M100 103 L112 110 M112 103 L100 110" fill="none" stroke-width="5"/>
+    <path d="M128 103 L140 110 M140 103 L128 110" fill="none" stroke-width="5"/>
+    <!-- 波浪嘴 -->
+    <path d="M104 126 Q110 133 116 126 T128 126 T140 126" fill="none" stroke-width="5"/>
+    <!-- 汗滴 -->
+    <path d="M170 108 q10 14 0 21 q-10 -7 0 -21" fill="#6fd3ac" stroke-width="4"/>
+    <!-- 桌子 -->
+    <rect x="18" y="190" width="204" height="13" rx="6" fill="#ffcf9e"/>
+    <!-- 笔记本屏幕 -->
+    <rect x="150" y="132" width="62" height="48" rx="6" fill="#dcf5ea"/>
+    <rect x="146" y="180" width="70" height="10" rx="4" fill="#ffc93d" stroke-width="5"/>
+  </g>
+  <text x="181" y="163" font-size="19" font-weight="bold" fill="#1e8a63" text-anchor="middle" font-family="monospace">&lt;/&gt;</text>
+  <text x="42" y="72" font-size="24" font-weight="bold" fill="#f76b15" font-family="monospace" transform="rotate(-12 42 72)">{ }</text>
+  <path d="M206 52 l4 9 9 4 -9 4 -4 9 -4 -9 -9 -4 9 -4 z" fill="#ffc93d"/>
+</svg>

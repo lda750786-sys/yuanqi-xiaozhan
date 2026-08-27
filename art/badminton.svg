@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <!-- 羽毛球少年：挥拍击球瞬间 -->
+  <g stroke="#4d3b28" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- 地面影子 -->
+    <ellipse cx="118" cy="208" rx="72" ry="10" fill="#ffe8cf" stroke="none"/>
+    <!-- 身后的速度线 -->
+    <path d="M28 96 H52" fill="none" stroke-width="5"/>
+    <path d="M22 112 H46" fill="none" stroke-width="5"/>
+    <!-- 后腿 + 前腿（弓步） -->
+    <path d="M92 158 Q80 182 62 188" fill="none"/>
+    <path d="M112 158 Q120 180 138 190" fill="none"/>
+    <ellipse cx="56" cy="191" rx="11" ry="6" fill="#ffc93d" stroke-width="4.5"/>
+    <ellipse cx="144" cy="193" rx="11" ry="6" fill="#ffc93d" stroke-width="4.5"/>
+    <!-- 躯干（前倾） -->
+    <path d="M88 112 L118 112 L128 160 L82 160 Z" fill="#ff8a3d"/>
+    <!-- 左臂后摆 -->
+    <path d="M86 122 Q68 134 60 148" fill="none"/>
+    <!-- 头 -->
+    <circle cx="98" cy="88" r="26" fill="#ffd9b8"/>
+    <path d="M74 84 A26 26 0 0 1 122 84 Q108 68 98 68 Q88 68 74 84 Z" fill="#4d3b28"/>
+    <!-- 橙色发带 -->
+    <path d="M75 81 Q98 68 121 81" fill="none" stroke="#ff8a3d" stroke-width="9"/>
+    <!-- 笑眼 + 嘴 -->
+    <path d="M90 88 q4 -6 8 0" fill="none" stroke-width="4.5"/>
+    <path d="M104 88 q4 -6 8 0" fill="none" stroke-width="4.5"/>
+    <path d="M95 100 q6 5 12 0" fill="none" stroke-width="4.5"/>
+    <!-- 挥拍手臂 + 球拍 -->
+    <path d="M116 120 Q138 102 150 86" fill="none"/>
+    <path d="M150 86 L163 67" fill="none" stroke-width="7"/>
+    <ellipse cx="177" cy="48" rx="17" ry="21" fill="#e8f9f1" stroke="#1e8a63" transform="rotate(-36 177 48)"/>
+    <!-- 汗滴 -->
+    <path d="M68 60 q9 13 0 19 q-9 -6 0 -19" fill="#6fd3ac" stroke-width="4"/>
+  </g>
+  <!-- 球拍网线 -->
+  <g stroke="#1e8a63" stroke-width="2.5" stroke-linecap="round">
+    <path d="M166 42 L188 58"/>
+    <path d="M171 35 L193 51"/>
+    <path d="M162 49 L182 64"/>
+  </g>
+  <!-- 飞出的羽毛球 -->
+  <circle cx="207" cy="30" r="6.5" fill="#ff9fb2" stroke="#4d3b28" stroke-width="4"/>
+  <path d="M212 25 L226 10 L233 18 L219 32 Z" fill="#ffffff" stroke="#4d3b28" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M215 22 L226 11 M220 28 L230 16" stroke="#4d3b28" stroke-width="3" stroke-linecap="round"/>
+  <!-- 击球弧线 -->
+  <path d="M190 42 Q200 38 202 33" fill="none" stroke="#ffc93d" stroke-width="4" stroke-dasharray="5 6" stroke-linecap="round"/>
+  <path d="M152 18 l3 7 7 3 -7 3 -3 7 -3 -7 -7 -3 7 -3 z" fill="#ffc93d"/>
+</svg>

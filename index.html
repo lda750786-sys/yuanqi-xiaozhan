@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>李达 · 元气小站</title>
+  <meta name="description" content="李达的轻松活泼个人小站" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     ✏️ 想改自己的信息？全站要改的地方都标了「✏️」
+     ══════════════════════════════════════════════ -->
+
+<!-- 背景漂浮装饰（纯视觉，不用管） -->
+<div class="bg-decor" aria-hidden="true">
+  <span class="blob blob-1"></span>
+  <span class="blob blob-2"></span>
+  <span class="blob blob-3"></span>
+  <span class="float-emoji">🍊</span>
+  <span class="float-emoji e2">✨</span>
+  <span class="float-emoji e3">🍋</span>
+</div>
+
+<!-- 鼠标拖尾画布 -->
+<canvas id="trail-canvas" aria-hidden="true"></canvas>
+
+<!-- ═══════ 头部 Hero ═══════ -->
+<header class="hero">
+  <!-- 头像：点击有彩蛋；想换照片就替换 avatar.png -->
+  <button class="avatar" id="avatar" title="戳我试试 ;)">
+    <img src="avatar.png" alt="李达的头像" />
+  </button>
+
+  <p class="hero-hello">Hi～ 我是</p>
+  <h1 class="hero-name">李达</h1>
+
+  <!-- 打字机轮播文案在 main.js 顶部的 TYPE_LINES 里改 -->
+  <p class="typewriter-line"><span id="typewriter"></span><span class="type-cursor"></span></p>
+
+  <nav class="hero-nav">
+    <a href="#about">关于我</a>
+    <a href="#skills">技能特长</a>
+    <a href="#hobby">爱好</a>
+    <a href="#contact">找到我</a>
+  </nav>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>往下滑有惊喜</span>
+    <i>↓</i>
+  </div>
+</header>
+
+<main>
+  <!-- ═══════ 关于我 ═══════ -->
+  <section class="section reveal" id="about">
+    <h2 class="section-title"><span class="title-emoji">👋</span>关于我</h2>
+    <div class="card about-card">
+      <p>
+        你好呀！我是一个<b>追电竞的低能量人士</b>，正在尝试健身，
+        喜欢捣鼓新东西——<b>AI 绘画、Vibe coding</b> 都在玩。
+        欢迎大家找我相互交流，一同进步！
+      </p>
+      <p>这里是我的小角落，随便逛逛 —— 对了，多戳几下上面那张照片试试？</p>
+      <div class="about-facts">
+        <span class="fact">🎮 电竞观赛中</span>
+        <span class="fact">💪 健身尝试中</span>
+        <span class="fact">✨ AI绘画 · Vibe coding</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════ 技能特长 ═══════ -->
+  <section class="section reveal" id="skills">
+    <h2 class="section-title"><span class="title-emoji">⚡</span>技能特长</h2>
+    <p class="section-sub">点点下面的标签，它们会跳一下 :)</p>
+    <div class="skill-wall">
+      <button class="skill skill-a">🎬 视频剪辑</button>
+      <button class="skill skill-c">🏓 乒乓球</button>
+      <button class="skill skill-d">🎮 王者荣耀 · 业余爱好</button>
+    </div>
+  </section>
+
+  <!-- ═══════ 爱好 ═══════ -->
+  <section class="section reveal" id="hobby">
+    <h2 class="section-title"><span class="title-emoji">🎨</span>爱好</h2>
+    <div class="card hobby-card">
+      <ul class="hobby-list">
+        <li class="hobby-music">
+          <span class="hobby-line">🎵 听音乐 —— 最爱这四支乐队：</span>
+          <div class="album-row">
+            <figure class="album">
+              <img src="covers/beatles-abbey-road.jpg" alt="The Beatles《Abbey Road》专辑封面" />
+              <figcaption>The Beatles<em>Abbey Road</em></figcaption>
+            </figure>
+            <figure class="album">
+              <img src="covers/linkin-park-hybrid-theory.jpg" alt="Linkin Park《Hybrid Theory》专辑封面" />
+              <figcaption>Linkin Park<em>Hybrid Theory</em></figcaption>
+            </figure>
+            <figure class="album">
+              <img src="covers/oasis-morning-glory.jpg" alt="Oasis《(What's the Story) Morning Glory?》专辑封面" />
+              <figcaption>Oasis<em>Morning Glory?</em></figcaption>
+            </figure>
+            <figure class="album">
+              <img src="covers/green-day-american-idiot.jpg" alt="Green Day《American Idiot》专辑封面" />
+              <figcaption>Green Day<em>American Idiot</em></figcaption>
+            </figure>
+          </div>
+        </li>
+        <li class="hobby-more">
+          <div class="album-row tile-row">
+            <figure class="album tile">
+              <img src="art/vibe-coding.svg" alt="抓狂写代码的动漫小人插画" />
+              <figcaption>💻 Vibe coding<em>抓狂，但上头</em></figcaption>
+            </figure>
+            <figure class="album tile">
+              <img src="art/ai-art.svg" alt="机器人画画的插画" />
+              <figcaption>🎨 AI 艺术<em>机器人帮我代笔</em></figcaption>
+            </figure>
+            <figure class="album tile">
+              <img src="art/badminton.svg" alt="挥拍打羽毛球的少年插画" />
+              <figcaption>🏸 羽毛球<em>一拍一个准</em></figcaption>
+            </figure>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════ 找到我 ═══════ -->
+  <section class="section reveal" id="contact">
+    <h2 class="section-title"><span class="title-emoji">📮</span>找到我</h2>
+    <div class="card contact-card">
+      <div class="qr-area">
+        <!-- ✏️ 想换二维码就替换 wechat-qr.jpg -->
+        <img class="qr" src="wechat-qr.jpg?v=2" alt="微信二维码，扫码加我好友" />
+        <div class="qr-side">
+          <h3>微信扫一扫，加我好友 👆</h3>
+          <p class="qr-note">我微信名叫「阿达」，广东湛江人。扫不了码也可以直接复制微信号去搜：</p>
+          <button class="contact wechat" id="wechat-btn" title="点了才知道">
+            <span>💬 复制我的微信号</span><small>Anson-Fract-Creat</small>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>© 2026 李达 · 用 <b class="heart" id="heart">❤️</b> 和 ☕ 制作</p>
+  <p class="footer-tip">小提示：这页里还藏了一个彩蛋，试试键盘 ↑↑↓↓←→←→BA</p>
+</footer>
+
+<!-- 点头像后的提示气泡 -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="main.js"></script>
+</body>
+</html>
