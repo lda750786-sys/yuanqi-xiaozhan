@@ -134,14 +134,14 @@ body {
 }
 .avatar-bubble {
   position: absolute;
-  right: -175px;
+  left: -175px;
   bottom: -14px;
   display: flex;
   align-items: center;
   gap: 9px;
   background: #fff;
   border: 2.5px solid var(--orange);
-  border-radius: 20px 20px 20px 6px;
+  border-radius: 20px 20px 6px 20px;
   padding: 10px 18px;
   box-shadow: var(--shadow);
   white-space: nowrap;
@@ -166,16 +166,17 @@ body {
   font-weight: 400;
   color: var(--muted);
 }
-/* 指向头像的小圆点尾巴 */
+/* 指向头像的小圆点尾巴（气泡在左侧 → 尾巴朝右） */
 .avatar-bubble::after,
 .avatar-bubble::before {
   content: "";
   position: absolute;
   border-radius: 50%;
   background: var(--orange);
+  left: auto;
 }
-.avatar-bubble::after { width: 9px; height: 9px; left: -17px; bottom: 3px; opacity: 0.7; }
-.avatar-bubble::before { width: 5px; height: 5px; left: -27px; bottom: -3px; opacity: 0.45; }
+.avatar-bubble::after { width: 9px; height: 9px; right: -17px; bottom: 3px; opacity: 0.7; }
+.avatar-bubble::before { width: 5px; height: 5px; right: -27px; bottom: -3px; opacity: 0.45; }
 
 @keyframes bubble-float {
   0%, 100% { transform: translateY(0) rotate(-1.5deg); }
@@ -533,8 +534,18 @@ body {
   .qr-area { justify-content: center; text-align: center; }
   .qr-side .contact { margin: 0 auto; }
   .avatar-bubble {
-    position: static;
-    margin-top: 14px;
-    animation: none;
+    left: -104px;
+    right: auto;
+    bottom: -10px;
+    padding: 7px 13px;
+    gap: 7px;
+    border-radius: 16px 16px 6px 16px;
   }
+  .avatar-bubble .finger { font-size: 20px; }
+  .bubble-text { font-size: 15px; }
+  .bubble-text small { font-size: 11px; }
+  .avatar-bubble::after { width: 7px; height: 7px; right: -12px; bottom: 2px; }
+  .avatar-bubble::before { width: 4px; height: 4px; right: -18px; bottom: -2px; }
+  .qr-side .contact { min-width: 0; width: 100%; padding: 12px 16px; font-size: 15px; }
+  .qr-side .contact small { font-size: 12px; }
 }
