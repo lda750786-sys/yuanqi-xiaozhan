@@ -125,8 +125,21 @@ body {
   75%      { transform: rotate(10deg) scale(1.05); }
 }
 
+/* 头像下方的互动小提示 */
+.avatar-hint {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 14.5px;
+  letter-spacing: 1px;
+  animation: hint-sway 2.8s ease-in-out infinite;
+}
+@keyframes hint-sway {
+  0%, 100% { transform: rotate(-2.5deg); }
+  50%      { transform: rotate(2.5deg) translateY(-2px); }
+}
+
 .hero-hello {
-  margin-top: 34px;
+  margin-top: 16px;
   color: var(--muted);
   letter-spacing: 4px;
   font-size: 17px;
@@ -186,16 +199,6 @@ body {
   border-color: var(--orange);
   color: var(--orange-deep);
 }
-
-.scroll-hint {
-  position: absolute;
-  bottom: 26px;
-  color: var(--muted);
-  font-size: 14px;
-  animation: bob 1.8s ease-in-out infinite;
-}
-.scroll-hint i { font-style: normal; display: block; font-size: 18px; }
-@keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
 
 /* ═══════ 内容板块通用 ═══════ */
 .section {
